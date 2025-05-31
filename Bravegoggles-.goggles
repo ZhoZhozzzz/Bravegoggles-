@@ -1,19 +1,19 @@
-version: 1.0
-title: Better Results Goggle
-description: Boosts quality sources and allows more NSFW results. Filters out low-effort content.
-author: ZhoZhozzzz
-included_domains:
-  - reddit.com
-  - literotica.com
-  - ao3.org
-  - github.com
-  - deviantart.com
-  - xvideos.com
-  - nhentai.net
-  - fanfiction.net
-  - rentry.co
-excluded_domains:
-  - quora.com
-  - pinterest.com
-  - wikihow.com
-  - medium.com
+! name: Better Results Goggle
+! description: Boosts high-quality and NSFW-friendly content while filtering low-effort spam.
+! public: true
+! author: ZhoZhozzzz
+
+$boost,site=reddit.com
+$boost,site=literotica.com
+$boost,site=ao3.org
+$boost,site=github.com
+$boost,site=deviantart.com
+$boost,site=xvideos.com
+$boost,site=nhentai.net
+$boost,site=fanfiction.net
+$boost,site=rentry.co
+
+$discard,site=quora.com
+$discard,site=pinterest.com
+$discard,site=wikihow.com
+$discard,site=medium.com
